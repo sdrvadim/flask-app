@@ -27,7 +27,7 @@ pipeline {
         stage("Run") {
             steps {
                 echo " ============== running =================="
-                sh ' docker run -p 8888:5000 -d vadimmns/flask-app:$BUILD_ID '
+                sh ' docker run -p 8866:5000 -d vadimmns/flask-app:$BUILD_ID '
             }    	
         }
     }
